@@ -10,10 +10,7 @@ body {
   justify-content: space-around;
 }
 
-#crystal1,
-#crystal2,
-#crystal3,
-#crystal4 {
+#crystal {
   float: left;
 }
 
