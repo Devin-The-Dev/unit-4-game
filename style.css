@@ -1,0 +1,25 @@
+body {
+  background: url(nature-france-rocks-caves.jpg);
+  resize: none;
+  background-size: cover;
+  color: #f5f5f5;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#crystal1,
+#crystal2,
+#crystal3,
+#crystal4 {
+  float: left;
+}
+
+#crystal1:hover,
+#crystal2:hover,
+#crystal3:hover,
+#crystal4:hover {
+  cursor: pointer;
+}
