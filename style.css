@@ -10,7 +10,7 @@ body {
   justify-content: space-around;
 }
 
-#crystal {
+.crystal {
   float: left;
 }
 
