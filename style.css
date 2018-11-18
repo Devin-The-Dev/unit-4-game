@@ -2,7 +2,7 @@
 
 body {
   background: url(nature-france-rocks-caves.jpg);
-  resize: none;
+  background-repeat: no-repeat;
   background-size: cover;
   color: #f5f5f5;
 }
