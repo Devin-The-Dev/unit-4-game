@@ -30,6 +30,8 @@ var crystalValue4 = Math.floor(Math.random() * 11 + 1);
 var crystalTotal = 0;
 var win = 0;
 var loose = 0;
+$("#wNumber").text(win);
+$("#lNumber").text(loose);
 
 console.log(crystalValue1);
 console.log(crystalValue2);
@@ -74,14 +76,31 @@ $("#crystal4").on("click", function crystal4() {
 // I had this in the wrong spot
 // Can I create the function and then call it inside another?
 // Now I want the win/loose to add to their counters
+// Now I need to restart the game, but keep the win/loose counters
 function gameOver() {
   if (crystalTotal === objective) {
-    console.log("You win!");
-    win++
+    alert("You win!"); //Use alert to keep the win/lose counters, upon restart
+    win++;
+    $(".wNumber").text(win);
+    newgame();
     //Elses can have a conditional statment, but it needs to be else if, and dont include the else statement
   } else if (crystalTotal > objective) {
-    console.log("You loose!"); //Condition was met!
-    lose++
+    alert("You loose!"); //Condition was met!
+    loose++;
+    $(".lNumber").text(loose);
+    newgame();
+  }
+  function newgame() {
+    //Reset all random numbers
+    //Display new objective number
+    //Reset crystalTotal, and display it
+    var objective = Math.floor(Math.random() * 101 + 19);
+    var crystalValue1 = Math.floor(Math.random() * 11 + 1);
+    var crystalValue2 = Math.floor(Math.random() * 11 + 1);
+    var crystalValue3 = Math.floor(Math.random() * 11 + 1);
+    var crystalValue4 = Math.floor(Math.random() * 11 + 1);
+    var crystalTotal = 0;
+    $(".tNumber").text(crystalTotal);
   }
 }
 console.log(objective);
