@@ -72,7 +72,6 @@ $("#crystal4").on("click", function crystal4() {
 
 //Now I need to determine if the total number wins/loses the game
 // Says I won once page was loaded. Maybe get rid of the function part
-// No, still doesn't know it won
 // I had this in the wrong spot
 // Can I create the function and then call it inside another?
 // Now I want the win/loose to add to their counters
